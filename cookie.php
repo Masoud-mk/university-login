@@ -1,7 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: masoudmk
- * Date: 2/27/19
- * Time: 5:52 PM
- */
+
+setcookie('username','Value',time()+60*60*60);
+
+//destroy cookies
+//setcookie('username','Value',time()-60);

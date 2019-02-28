@@ -37,33 +37,37 @@
                 <?= $status ?>
             </div>
         <?php endif; ?>
-        <form class="login100-form validate-form" action="login.php" method="POST">
+        <form class="login100-form validate-form" action="register.php" method="POST">
 				<span class="login100-form-title p-b-37">
-					Sign In
+					Register
 				</span>
 
-            <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-                <input class="input100" type="text" name="username" placeholder="username or email">
+            <div class="wrap-input100 validate-input m-b-20" >
+                <input class="input100" type="text" name="name" placeholder="Enter your first name ">
                 <span class="focus-input100"></span>
             </div>
-
-            <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+            <div class="wrap-input100 validate-input m-b-20">
+                <input class="input100" type="text" name="family" placeholder="Enter your last name " >
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-20" >
+                <input class="input100" type="text" name="username" placeholder="Enter your username " >
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-20">
+                <input class="input100" type="text" name="email" placeholder="Enter your Email " >
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-25">
                 <input class="input100" type="password" name="password" placeholder="password">
                 <span class="focus-input100"></span>
             </div>
-
             <div class="container-login100-form-btn">
-                <button class="login100-form-btn">
-                    Sign In
+                <button class="login100-form-btn" type="submit">
+                    Sign up
                 </button>
             </div>
         </form>
-        <br>
-        <div class="container-login100-form-btn">
-            <a href="register.view.php" class="login100-form-btn">
-                Sign up
-            </a>
-        </div>
 
     </div>
 </div>

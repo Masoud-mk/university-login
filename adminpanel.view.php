@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V9</title>
+    <title>Login Masoud Khani</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -32,36 +33,14 @@
 
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
     <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-        <?php if(! is_null($status) ) : ?>
-            <div class="alert alert-danger">
-                <?= $status ?>
-            </div>
-        <?php endif; ?>
-        <form class="login100-form validate-form" action="login.php" method="POST">
+        <form class="login100-form validate-form">
 				<span class="login100-form-title p-b-37">
-					Sign In
+					WELCOME <?= $username ?>
 				</span>
-
-            <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-                <input class="input100" type="text" name="username" placeholder="username or email">
-                <span class="focus-input100"></span>
-            </div>
-
-            <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                <input class="input100" type="password" name="password" placeholder="password">
-                <span class="focus-input100"></span>
-            </div>
-
-            <div class="container-login100-form-btn">
-                <button class="login100-form-btn">
-                    Sign In
-                </button>
-            </div>
         </form>
-        <br>
         <div class="container-login100-form-btn">
-            <a href="register.view.php" class="login100-form-btn">
-                Sign up
+            <a href="logout.php" class="login100-form-btn">
+                Logout
             </a>
         </div>
 
